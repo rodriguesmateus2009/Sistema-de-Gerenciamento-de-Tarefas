@@ -11,6 +11,5 @@ import com.treina.recife.sgp.model.Usuario;
 @Repository
 public interface ProjetoRepository extends JpaRepository<Projeto, Long> {
     List<Projeto> findByResponsavelUserId(Long userId);
-    
-    Optional<Usuario> findByResponsavelProjectId(Long projectId);
+
 }
